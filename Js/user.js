@@ -18,7 +18,7 @@
                data : {action:'userInfo', payload: response.id},
                type : 'post',
                success : function(postResponse) {
-                  var responseJson = jQuery.parseJSON(postResponse);
+                  return jQuery.parseJSON(postResponse);
                }        
       });
     });
